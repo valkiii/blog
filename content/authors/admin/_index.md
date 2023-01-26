@@ -21,7 +21,7 @@ interests:
 - ML real world application
 - Complex networks
 - Complex systems
-- VC world
+- Venture Capital Investment
 
 # Education to show in About widget
 education:

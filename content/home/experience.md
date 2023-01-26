@@ -76,7 +76,7 @@ experience:
   - title: Lead Data Scientist
     company: FXC Intelligence
     company_url: 'https://www.fxcompared.com'
-    company_logo:
+    company_logo: 
     location: London
     date_start: '2017-06-01'
     date_end: '2019-03-01'

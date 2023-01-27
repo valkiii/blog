@@ -22,6 +22,20 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Team Lead
+    company: ABN Amro
+    company_url: 'www.abnamro.com'
+    company_logo: abn_logo
+    location: Amsterdam
+    date_start: '2022-09-01'
+    date_end: ''
+    description: |2-
+        Responsibilities:
+        
+        * Leading a team of 10 data scientist of different seniorities.
+        * Supervising a number of junior and medior data scientists on both technical and professional way.
+        * Responsable to deliver high quality and robust data solutions to our internal bank stake holders.
+        * Delivered 5 business/product oriented use cases (propensity to buy and churn models), improving by an overall 30% the number of conversions using a model driven audience selection for business campaigns (wrt previous business rules approach) up to 70% increase for a specific segment.
   - title: Senior Data Scientist
     company: ABN Amro
     company_url: 'www.abnamro.com'

@@ -1,9 +1,9 @@
 ---
-title: 📚 Bookshelf 2022 📚
+title: 📚 Bookshelf 📚
 subtitle: List of books for this year!
 
 # Summary for listings and search engines
-summary: List of books that I am currently reading or just read in 2022 and that I may suggest.
+summary: List of books that I am currently reading...
 
 # Link this post with a project
 projects: []
@@ -12,7 +12,7 @@ projects: []
 date: "2022-01-03T00:00:00Z"
 
 # Date updated
-lastmod: "2022-01-03T00:00:00Z"
+lastmod: "2023-01-26T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -42,11 +42,11 @@ categories:
 
 ## **Currently Reading**
 -----------
-### - Foundation - Isaac Asimov
-### - Creativity Inc. - Amy Wallace & Edwin Catmull
-### - What Do You Care What Other People Think? - Richard Feynman
-### - The restaurant at the end of the universe - Douglas Adams 
-### - Sapiens, A graphic history vol 2 - Vandermeulen, Casanave
+### - Foundation - <span style="color: green;">Isaac Asimov</span>
+### - Creativity Inc. - <span style="color: green;">Amy Wallace & Edwin Catmull</span>
+### - What Do You Care What Other People Think? - <span style="color: green;">Richard Feynman</span>
+### - The restaurant at the end of the universe - <span style="color: green;">ouglas Adams</span>
+### - Sapiens, A graphic history vol 2 - <span style="color: green;">Vandermeulen, Casanave. Yuval Noah Asimov</span>
 
 -----------
 -----------

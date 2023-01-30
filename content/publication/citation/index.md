@@ -76,6 +76,10 @@ projects: []
 slides: ""
 ---
 
+<script data-goatcounter="https://valkiii.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
 <div>Number of visitors: <div id="stats"></div></div>
 <script>
     var r = new XMLHttpRequest();

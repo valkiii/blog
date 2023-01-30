@@ -52,6 +52,10 @@ feature:
   icon_pack: custom
   name: Databricks
 
+- description: Hero
+  icon: leadership
+  icon_pack: custom
+  name: Leadership
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"

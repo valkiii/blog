@@ -75,3 +75,13 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+<div>Number of visitors: <div id="stats"></div></div>
+<script>
+    var r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+        document.querySelector('#stats').innerText = JSON.parse(this.responseText).count_unique
+    })
+    r.open('GET', 'https://valkiii.goatcounter.com/counter/' + encodeURIComponent(location.pathname) + '.json')
+    r.send()
+</script>

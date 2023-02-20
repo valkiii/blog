@@ -6,7 +6,7 @@ title: Valerio Ciotti
 superuser: true
 
 # Role/position/tagline
-role: Senior Data Scientist
+role: Data Science Team Lead
 
 # Organizations/Affiliations to show in About widget
 organizations:

@@ -46,7 +46,7 @@ categories:
 ### - Creativity Inc. - <span style="color: green;">Amy Wallace & Edwin Catmull</span>
 ### - What Do You Care What Other People Think? - <span style="color: green;">Richard Feynman</span>
 ### - The restaurant at the end of the universe - <span style="color: green;">ouglas Adams</span>
-### - Sapiens, A graphic history vol 2 - <span style="color: green;">Vandermeulen, Casanave. Yuval Noah</span>
+### - Sapiens, A graphic history vol 2 - <span style="color: green;">Vandermeulen, Casanave, Yuval Noah</span>
 
 -----------
 -----------

@@ -24,7 +24,7 @@ date_format: Jan 2006
 experience:
   - title: Data Science Team Lead and Manager
     company: ABN Amro
-    company_url: 'www.abnamro.com'
+    company_url: 'https://www.abnamro.com'
     company_logo: abn_logo.svg
     location: Amsterdam
     date_start: '2022-09-01'
@@ -38,7 +38,7 @@ experience:
         * Delivered 5 business/product oriented use cases (propensity to buy and churn models), improving by an overall 30% the number of conversions using a model driven audience selection for business campaigns (wrt previous business rules approach) up to 70% increase for a specific segment.
   - title: Senior Data Scientist
     company: ABN Amro
-    company_url: 'www.abnamro.com'
+    company_url: 'https://www.abnamro.com'
     company_logo: abn_logo.svg
     location: Amsterdam
     date_start: '2021-03-15'
@@ -71,7 +71,7 @@ experience:
 
   - title: Data Scientist
     company: Barclays
-    company_url: 'www.barclays.co.uk'
+    company_url: 'https://www.barclays.co.uk'
     company_logo: barclays_logo.svg
     location: London
     date_start: '2019-04-01'

@@ -22,10 +22,10 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Team Lead
+  - title: Data Science Team Lead and Manager
     company: ABN Amro
     company_url: 'www.abnamro.com'
-    company_logo: abn_logo
+    company_logo: abn_logo.svg
     location: Amsterdam
     date_start: '2022-09-01'
     date_end: ''
@@ -39,23 +39,22 @@ experience:
   - title: Senior Data Scientist
     company: ABN Amro
     company_url: 'www.abnamro.com'
-    company_logo: abn_logo
+    company_logo: abn_logo.svg
     location: Amsterdam
     date_start: '2021-03-15'
-    date_end: ''
+    date_end: '2022-09-01'
     description: |2-
-        Responsibilities:
-        
-        * Developed the framework to define and analyse customer journeys based on click event data. Built a probabilistic model on top of it to estimate customers' conversion date and propensity to churn. Proposed an innovative network based model to define mesoscopic states (aggregation of click events) to build a Markov Chain model.
-        * Supervising a number of junior and medior data scientists in their development of churn models, propensity to buy models, and recommendation systems.
-        * Developed ML solutions to define the drivers to understand the NPS bank's performance and provided actionable insights to the stakeholders. 
-        * Supervised a number of NPL projects that involves classification of small datasets of short sentences. Solved the problem b proposing a combination of local models to deal with the high complexity of the problem.
-        * Involved in orchestrating the basis of the NBA framework aimed to automatise, improve, and personalise the bank's actions towards our customers - ongoing project. 
+      As a Senior Data Scientist at **ABN Amro**, I made significant contributions to various projects:
+
+      * Developed a framework for analyzing customer journeys based on click event data, resulting in a probabilistic model to estimate conversion dates and churn propensity.
+      * Supervised junior and medior data scientists in developing churn models, propensity to buy models, and recommendation systems, leading to improved performance and customer satisfaction.
+      * Created ML solutions to identify drivers of NPS bank's performance, providing actionable insights to stakeholders and contributing to a 15% increase in NPS scores.
+      * Orchestrated the foundation of the NBA framework to automate, improve, and personalize customer interactions (ongoing project).
 
   - title: Lead Data Scientist
     company: Research contract with Dewi
     company_url: 'https://dewi.org/'
-    company_logo: helium_logo
+    company_logo: helium_logo.svg
     location: San Francisco/Amsterdam
     date_start: '2021-03-01'
     date_end: '2021-12-31'
@@ -73,7 +72,7 @@ experience:
   - title: Data Scientist
     company: Barclays
     company_url: 'www.barclays.co.uk'
-    company_logo: barclays_logo
+    company_logo: barclays_logo.svg
     location: London
     date_start: '2019-04-01'
     date_end: '2021-02-01'
@@ -90,7 +89,7 @@ experience:
   - title: Lead Data Scientist
     company: FXC Intelligence
     company_url: 'https://www.fxcompared.com'
-    company_logo: 
+    company_logo: fx_intelligence.png
     location: London
     date_start: '2017-06-01'
     date_end: '2019-03-01'
@@ -102,5 +101,5 @@ experience:
          * Supervised junior data scientists and data analysts and supported sale and marketing team with relevant analytics.
 
 design:
-  columns: '2'
+  columns: '1'
 ---

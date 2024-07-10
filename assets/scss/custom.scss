@@ -1,0 +1,207 @@
+// Custom color variables
+$primary: #037c7e;  
+$secondary: #181d21;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// Apply custom colors
+#navbar-main {
+    background-color: $primary !important;
+  }
+  
+  // Change navigation bar font color
+  #navbar-main .navbar-nav .nav-link {
+    color: #ffffff !important; // Change this to your desired default font color
+  }
+  
+  // Change color for active/hover state
+  #navbar-main .navbar-nav .nav-link:hover {
+    color: #d2ea00 !important;
+  }
+  
+  #navbar-main .navbar-nav .nav-link.active {
+    color: #081e6f !important;
+  }
+  
+  // Change site title color
+  #navbar-main .navbar-brand {
+    color: #dcc814 !important; // Change this to your desired color for the site title
+  }
+
+
+  .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    background-color: #e9ecef;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    top: 50%;  // Center vertically
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;  // Offset half of the height
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 100;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;  // Center text
+  }
+  
+  .timeline-content:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .timeline-content-left {
+    margin-right: auto;
+  }
+  
+  .timeline-content-right {
+    margin-left: auto;
+  }
+  
+  .experience-card {
+    cursor: pointer;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .experience-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .experience-company {
+    font-size: 1rem;
+    color: #37b826;
+    margin-bottom: 5px;
+  }
+  
+  .experience-location, .experience-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  
+  .experience-expand {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #36a428;
+    margin: 10px auto 0;
+    border: 3px solid #36a428;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .experience-description {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;  // Reset text alignment for description
+  }
+  
+  @media (max-width: 768px) {
+    .timeline:before {
+      left: 20px;
+    }
+    
+    .timeline-marker {
+      left: 20px;
+      margin-left: 0;
+    }
+    
+    .timeline-content {
+      width: calc(100% - 60px);
+      margin-left: 60px !important;
+      margin-right: 0 !important;
+    }
+  
+    .timeline-item {
+      width: 100%;
+    }
+  }
+
+  .company-logo {
+    max-width: 100px;
+    max-height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .experience-card {
+    cursor: pointer;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+//   .experience-card.expanded {
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+//   }
+  
+  .experience-expand {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px auto 0;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  
+  .experience-card:hover .experience-expand {
+    background-color: #007bff;
+    color: #fff;
+  }

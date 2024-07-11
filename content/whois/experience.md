@@ -30,19 +30,21 @@ experience:
         * Contributing to the bank strategy by providing advanced analytic models for various stakeholders such as eCommerce & Engagement, Customer Experience, Digital Channels, Customer Interaction, and Contact Center.
         * Leading a long-term and wider bank project aimed to provide the next best action for our customers in line with the bank's strategies.
         * Under my leadership, my team and I delivered 5+ business/product-oriented use cases, increased conversions by 30-70% using model-driven audience selection, increased customer engagement with newsletters by 80% using a recommendation system, and delivered a model to automate the taxonomy of open field reviews.
-
+  
   - title: Consultant - Data Scientist
     company: NDA
-    company_url: ''
-    company_logo: 
+    company_url:
+    company_logo: network_2.svg
     location: London, UK
     date_start: '2022-01-01'
     date_end: '2022-12-31'
+    extra_classes: consultant
     description: |2-
         Evaluation of an investment strategy - Investment in founder-led companies
         * Conducted a historical study of the market performance of Venture Capital-backed tech companies that underwent an IPO and have their founder as CEO.
         * Tested the hypothesis that these companies performed better than the market composite index over the last 20 years.
         * Delivered results in a written report to the CEO of the fund.
+    
 
   - title: Senior Data Scientist
     company: ABN Amro N.V.

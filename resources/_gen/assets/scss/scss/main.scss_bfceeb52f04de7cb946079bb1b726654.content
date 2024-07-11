@@ -9575,7 +9575,8 @@ body {
   --color-primary: #08613c;
   --color-secondary: #181d21;
   --color-border: #dee2e6;
-  --color-plus:#70b1f7; }
+  --color-plus:#70b1f7;
+  --color-consultant:#c5e2ba; }
 
 body.dark {
   --color-bg: rgb(8, 97, 60);
@@ -9583,7 +9584,8 @@ body.dark {
   --color-primary: #02210c;
   --color-secondary: #a1a8ae;
   --color-border: #2c2c2c;
-  --color-plus:#d9711cc4; }
+  --color-plus:#d9711cc4;
+  --color-consultant:#c5e2ba; }
 
 #experience.home-section .timeline-content {
   background-color: var(--color-bg);

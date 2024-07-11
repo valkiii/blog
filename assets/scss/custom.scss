@@ -39,6 +39,7 @@ $dark: #343a40;
     --color-secondary: #{$secondary};
     --color-border: #{$border-color};
     --color-plus:#70b1f7;
+    --color-consultant:#c5e2ba;
   }
   
   body.dark {
@@ -48,6 +49,7 @@ $dark: #343a40;
     --color-secondary: #a1a8ae;
     --color-border: #2c2c2c;
     --color-plus:#d9711cc4;
+    --color-consultant:#c5e2ba;
   }
   
   #experience.home-section {
@@ -86,7 +88,12 @@ $dark: #343a40;
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
+//   .experience-card.consultant {
+//     background-color: var(--color-consultant);
+//     margin: 0px solid var(--color-consultant);
+//   }
+
   .timeline:before {
     content: '';
     position: absolute;

@@ -62,10 +62,7 @@ I decided that I wanted a simple command to run all this. To do so, I wrote a si
 ![alt text](bash_update.svg)
 
 
-Let's break down what this function does: First it launches `hugo` to build the website, generating the static files in the public directory. Then I run `rsync -a public/* ../valkiii.github.io/.` to sync the contents of the public directory to the root of my GitHub Pages repository (`valkiii.github.io` in this example). I added the -a flag to ensure that all files and directories are copied recursively while preserving permissions and other attributes.
-
-Then it's time to add all changes in the current directory (my Hugo project directory) for committing with `git add --all`. There is no `git add` without a following `git commit -m "$1"` with the only exception being that the commit message is provided as the first argument to the function (`$1`). These two commands are naturally followed by a `git push` that pushes the changes to the remote repository, updating the Hugo project repository.
-
+Let's break down what this function does: First it launches `hugo` to build the website, generating the static files in the public directory. Then I run `rsync -a public/* ../valkiii.github.io/.` to sync the contents of the public directory to the root of my GitHub Pages repository (`valkiii.github.io` in this example). I added the `-a` flag to ensure that all files and directories are copied recursively while preserving permissions and other attributes.
 
 <div class="container">
   <div class="quote">

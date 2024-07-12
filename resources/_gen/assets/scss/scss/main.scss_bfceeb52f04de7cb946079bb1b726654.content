@@ -9812,16 +9812,26 @@ body.dark {
   color: #fff; }
 
 .container {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .container p {
-  margin-left: 20px; }
+  margin-left: 20px;
+  flex: 1; }
 
 .quote {
   flex: 0 0 300px;
-  margin-left: -35px;
-  margin-right: 10px;
-  margin-bottom: -30px; }
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  overflow: visible; }
+
+.quote-content {
+  position: relative;
+  left: -45px;
+  padding-left: 0px; }
 
 .rectangle {
   width: 20%;
@@ -9833,3 +9843,16 @@ body.dark {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 1px; }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; }
+  .quote {
+    flex-basis: auto;
+    margin-right: 0; }
+  .quote-content {
+    left: 0;
+    padding-left: 0; }
+  .container p {
+    margin-left: 0;
+    margin-top: 20px; } }

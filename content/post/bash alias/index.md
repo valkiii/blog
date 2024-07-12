@@ -69,17 +69,19 @@ Then it's time to add all changes in the current directory (my Hugo project dire
 
 <div class="container">
   <div class="quote">
-    <div class="rectangle"></div>
-    <p class="large-text">"Investing time studying, is always the right starting point"</p>
+    <div class="quote-content">
+      <div class="rectangle"></div>
+      <p class="large-text">"Investing time studying, is always the right starting point"</p>
+    </div>
   </div>
-   <p>
-    Then it's time to add all changes in the current directory (my Hugo project directory) for
-    committing with <code>git add --all</code>. There is not a <code>git add</code> without a following <code>git commit -m "$1"</code> with the only exception that the message that we add the commit get provided as the first argument to the function (<code>$1</code>).
+  <p>
+  Then it's time to add all changes in the current directory (my Hugo project directory) for committing with <code>git add --all</code>. There is not a <code>git add</code> without a following <code>git commit -m "$1"</code> with the only exception that the message that we add the commit get provided as the first argument to the function (<code>$1</code>).
   </p>
 </div>
+
  These two commands are naturally followed by a <code>git push</code> that pushes the changes to the remote repository, updating the Hugo project repository.
 
-<br>Then I want to actually update my repository on github, to be sure that the day my computer dies, I am still able to continue updating this website. To do so, fI first go back to my repo folder with `cd ../valkiii.github.io`, then, like before, I git add, commit, and push all changes with `git add --all`, `git commit -m "$1"` and `git push`. Finally, I go back to the blog folder to continue modifying and rendering my website locally with `cd ../blog/`.
+Then I want to actually update my repository on github, to be sure that the day my computer dies, I am still able to continue updating this website. To do so, fI first go back to my repo folder with `cd ../valkiii.github.io`, then, like before, I git add, commit, and push all changes with `git add --all`, `git commit -m "$1"` and `git push`. Finally, I go back to the blog folder to continue modifying and rendering my website locally with `cd ../blog/`.
 
 To use this function, save it in your `.bashrc` or `.bash_profile` file and source the file using source `~/.bashrc` to make the function available in your terminal session. Then, you can simply run update_website "Your commit message" whenever you want to build and deploy your website with a single command.
 

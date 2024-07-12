@@ -351,17 +351,30 @@ $dark: #343a40;
 
   .container {
     display: flex;
+    flex-wrap: wrap;
   }
   
   .container p {
     margin-left: 20px;
+    flex: 1;
   }
   
   .quote {
     flex: 0 0 300px;
-    margin-left: -35px;
-    margin-right: 10px;
-    margin-bottom: -30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    // background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+  }
+  
+  .quote-content {
+    position: relative;
+    left: -45px;
+    padding-left: 0px;
   }
   
   .rectangle {
@@ -370,9 +383,30 @@ $dark: #343a40;
     background-color: #0c5460;
     margin-bottom: 10px;
   }
-  
+
   .large-text {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 1px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .quote {
+      flex-basis: auto;
+      margin-right: 0;
+    }
+  
+    .quote-content {
+      left: 0;
+      padding-left: 0;
+    }
+  
+    .container p {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }

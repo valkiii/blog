@@ -48,6 +48,7 @@ I am grateful that Hugo and GitHub (and their community of developers) exist; ot
 I always had a hard time figuring out all the different steps to modify my website locally, push the changes to my repository, and then see them appear (magically) on my GitHub Pages site. To be honest, investing a bit of time understanding how all parts interact with one another is not that difficult. But let's be honest, I always dirty my hands first until I can't take it anymore and finally end up reading about how things are built and meant to work. Note to self: <mark>investing time studying is always the right starting point</mark>.
 
 I think I finally found a way to help myself by automating the process of updating my blog (and hopefully keep writing on it more than before) using a single Bash function.
+
 ---
 ## How I structured the web site
 

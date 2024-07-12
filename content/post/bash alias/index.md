@@ -3,7 +3,7 @@ title: Automating Your Website Updates with Hugo and GitHub Pages
 subtitle: 
 
 # Summary for listings and search engines
-summary: I was looking to find a way to automate the process behind updating my site, and I found one.
+summary: I was looking for a way to automate the process behind updating my site, and I found one.
 
 # Link this post with a project
 projects: []
@@ -43,19 +43,17 @@ categories:
 
 #
 ---
+I am grateful that Hugo and GitHub (and their community of developers) exist; otherwise, I would not have been able to create this website in the first place. However, if you do not spend enough time digging into how everything works, you may end up feeling lost.
 
- I am grateful that Hugo and GitHub (and their community of developers) exist, otherwise I would not have been able to create this website in the first place. However, if you do not spend too much time digging into how everything works, you may end up feeling lost.
+I always had a hard time figuring out all the different steps to modify my website locally, push the changes to my repository, and then see them appear (magically) on my GitHub Pages site. To be honest, investing a bit of time understanding how all parts interact with one another is not that difficult. But let's be honest, I always dirty my hands first until I can't take it anymore and finally end up reading about how things are built and meant to work. Note to self: <mark>investing time studying is always the right starting point</mark>.
 
-I always had a hard time figuring out all the different steps to modify my website locally, push the changes to my repository, and then see them appear (magically) on my GitHub Pages site. To be honest, investing a bit of time understanding how all parts interact with one another is not that difficult. But, let's be honest, I always first dirty my hands until I can't take it anymore, and finally end up reading about how things are built and meant to work. Note to myself, <mark>investing time studying, it's always the right starting point</mark>.
-
-I think I finally found a way to help myself by automating the process of updating my blog (and hopefully keep writing on it more than before) using a single Bash function. 
-
+I think I finally found a way to help myself by automating the process of updating my blog (and hopefully keep writing on it more than before) using a single Bash function.
 ---
 ## How I structured the web site
 
 To keep things easy, I have now two repos:
-- one where I develop locally my website using the theme from wowchemy, which goes under the name `blog`.
-- one that has the website name `valkiii.github.io` and where I transfer the `public` content of the `blog` repo.
+- One where I develop my website locally using the theme from Wowchemy, which goes under the name `blog`.
+- One that has the website name `valkiii.github.io` and where I transfer the `public` content of the `blog` repo.
 ---
 
 I decided that I wanted a simple command to run all this. To do so, I wrote a simple Bash function in my `.bashrc` file containing the following:
@@ -65,13 +63,13 @@ I decided that I wanted a simple command to run all this. To do so, I wrote a si
 
 Let's break down what this function does: First it launches `hugo` to build the website, generating the static files in the public directory. Then I run `rsync -a public/* ../valkiii.github.io/.` to sync the contents of the public directory to the root of my GitHub Pages repository (`valkiii.github.io` in this example). I added the -a flag to ensure that all files and directories are copied recursively while preserving permissions and other attributes.
 
-Then it's time to add all changes in the current directory (my Hugo project directory) for committing with `git add --all`. There is not a `git add` without a following `git commit -m "$1"` with the only excpection that the message that we add the commit get provided as the first argument to the function (`$1`). These two commands are naturally followed by a `git push` that pushes the changes to the remote repository, updating the Hugo project repository.
+Then it's time to add all changes in the current directory (my Hugo project directory) for committing with `git add --all`. There is no `git add` without a following `git commit -m "$1"` with the only exception being that the commit message is provided as the first argument to the function (`$1`). These two commands are naturally followed by a `git push` that pushes the changes to the remote repository, updating the Hugo project repository.
 
 
 <div class="container">
   <div class="quote">
     <div class="rectangle"></div>
-    <p class="large-text">"Investing time studying, it's always the right starting point"</p>
+    <p class="large-text">"Investing time studying, is always the right starting point"</p>
   </div>
    <p>
     Then it's time to add all changes in the current directory (my Hugo project directory) for
@@ -80,8 +78,7 @@ Then it's time to add all changes in the current directory (my Hugo project dire
 </div>
  These two commands are naturally followed by a <code>git push</code> that pushes the changes to the remote repository, updating the Hugo project repository.
 
-<br>Then I want to actually update my repository on github, to be sure that the day my computer dies, I am still able to continue updating this website. To do so first I go back to my repo folder `cd ../valkiii.github.io`, then like before, git add, commit and push all changes with 
-`git add --all`, `git commit -m "$1"` and `git push` and finally go back to the blog folder in order to maybe continue modify and render my website locally with `cd ../blog/`.
+<br>Then I want to actually update my repository on github, to be sure that the day my computer dies, I am still able to continue updating this website. To do so, fI first go back to my repo folder with `cd ../valkiii.github.io`, then, like before, I git add, commit, and push all changes with `git add --all`, `git commit -m "$1"` and `git push`. Finally, I go back to the blog folder to continue modifying and rendering my website locally with `cd ../blog/`.
 
 To use this function, save it in your `.bashrc` or `.bash_profile` file and source the file using source `~/.bashrc` to make the function available in your terminal session. Then, you can simply run update_website "Your commit message" whenever you want to build and deploy your website with a single command.
 

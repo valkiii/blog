@@ -75,7 +75,11 @@ highlight_name: true
 
 -----
 
-I m the team lead of the data science team for consumer and affluent customers at [ABN Amro](https://www.abnamro.nl/nl/prive/index.html) were by applying data science to a multitude of use cases (churning problems, propensity to buy, recommender systems) I help shaping the bank of tomorrow. 
+I am an experienced data science professional with over 8 years of experience in both traditional banking and fintech, spanning large and small organizations. Proficient in programming, data science, and research, I have expertise in Python, Big Data, and Machine Learning (7+ years).
+
+I excel in solving business problems through data-driven approaches, valuing teamwork, brainstorming, and proactive solution-finding. Passionate about innovation, I leverage disruptive ideas to drive success in diverse projects.
+
+Currently, I am the manager and team lead of the data science team for consumer and affluent customers at [ABN Amro](https://www.abnamro.nl/nl/prive/index.html) were by applying data science to a multitude of use cases (churning problems, propensity to buy, recommender systems) I help shaping the bank of tomorrow. 
 
 Previously, I worked as data scientist at [Barclays](https://www.barclays.co.uk), but in 2021 I decided to come back to the continent and currently live in Amsterdam. 
 

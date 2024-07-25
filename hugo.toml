@@ -59,7 +59,7 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "A blog of a data person."
+  homeSubtitle = "Imagine, Try, Solve."
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -214,25 +214,25 @@ disableHugoGeneratorInject = false
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+  # [[params.social]]
+  #   name = "twitter"
+  #   url  = "https://twitter.com/"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:nobody@example.com"
+  # [[params.social]]
+  #   name = "email"
+  #   url  = "mailto:nobody@example.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/valkiii"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/in/valerio-ciotti-ph-d-668b191b/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+  # [[params.social]]
+  #   name = "stackoverflow"
+  #   url  = "https://www.stackoverflow.com/"
 
 #[languages]
 #  [languages.en]

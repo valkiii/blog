@@ -1,0 +1,278 @@
+# About Me
+
+I am an experienced data science professional with over 8 years of experience in both traditional banking and fintech, spanning large and small organizations. Proficient in programming, data science, and research, I have expertise in Python, Big Data, and Machine Learning (7+ years).
+
+I excel in solving business problems through data-driven approaches, valuing teamwork, brainstorming, and proactive solution-finding. Passionate about innovation, I leverage disruptive ideas to drive success in diverse projects.
+
+Currently, I am the manager and team lead of the data science team for consumer and affluent customers at [ABN Amro](https://www.abnamro.nl/nl/prive/index.html) were by applying data science to a multitude of use cases (churning problems, propensity to buy, recommender systems) I help shaping the bank of tomorrow. 
+
+Previously, I worked as data scientist at [Barclays](https://www.barclays.co.uk), but in 2021 I decided to come back to the continent and currently live in Amsterdam. 
+
+I received my PhD from the [School of Mathematical Sciences at Queen Mary University of London](https://www.qmul.ac.uk/maths/), where I worked within the Complex Systems and Networks Research Group under the supervision of Prof. [Vito Latora](https://scholar.google.co.uk/citations?user=jXTPa_AAAAAJ&hl=en). 
+
+
+# Experience
+
+<div class="experience-container">
+  <div class="experience-cards">
+    <div class="experience-card" data-target="abn-amro-lead">
+      <img src="/images/abn.png" alt="ABN Amro Logo" class="company-logo">
+      <h3 class="job-title">Data Science Team Lead a.i.</h3>
+      <p class="company">ABN Amro N.V.</p>
+      <p class="date">Sep 2022 - Present</p>
+    </div>
+     <div class="experience-card" data-target="nda-consultant">
+      <img src="/images/network_2.svg" alt="NDA Logo" class="company-logo">
+      <h3 class="job-title">Consultant - Data Scientist</h3>
+      <p class="company">NDA</p>
+      <p class="date">Jan 2022 - Dec 2022</p>
+    </div>
+    <div class="experience-card" data-target="abn-amro-senior">
+      <img src="/images/abn.png" alt="ABN Amro Logo" class="company-logo">
+      <h3 class="job-title">Senior Data Scientist</h3>
+      <p class="company">ABN Amro N.V.</p>
+      <p class="date">Mar 2021 - Sep 2022</p>
+    </div>
+    <div class="experience-card" data-target="helium">
+      <img src="/images/helium_logo.svg" alt="Helium Foundation Logo" class="company-logo">
+      <h3 class="job-title">Consultant</h3>
+      <p class="company">Helium Foundation</p>
+      <p class="date">Mar 2021 - Dec 2021</p>
+    </div>
+    <div class="experience-card" data-target="barclays">
+      <img src="/images/barclays_logo.svg" alt="Barclays Logo" class="company-logo">
+      <h3 class="job-title">Senior Data Scientist</h3>
+      <p class="company">Barclays Bank PLC</p>
+      <p class="date">Apr 2019 - Feb 2021</p>
+    </div>
+    <div class="experience-card" data-target="fxcintel">
+      <img src="/images/fx_logo.jpeg" alt="FXCintel Logo" class="company-logo">
+      <h3 class="job-title">Lead Data Scientist</h3>
+      <p class="company">FXCintel Ltd.</p>
+      <p class="date">Jun 2017 - Mar 2019</p>
+    </div>
+  </div>
+  <div class="experience-details">
+    <div id="abn-amro-lead" class="detail-content">
+      <h2>Data Science Team Lead a.i. at ABN Amro N.V.</h2>
+      <p>Leading a team of 10 data scientists in ABN retail banking Center of Excellence. Contributing to bank strategy through advanced analytic models.</p>
+      <h3>Key Responsibilities & Achievements:</h3>
+      <ul>
+        <li>Appointed as the Data Science team lead of ABN retail banking Center of Excellence (CoE) by both the CDO and the previous team lead.</li>
+        <li>Contributing to the bank strategy by providing advanced analytic models for various stakeholders such as eCommerce & Engagement, Customer Experience, Digital Channels, Customer Interaction, and Contact Center.</li>
+        <li>Leading a long-term and wider bank project aimed to provide the next best action for our customers in line with the bank's strategies.</li>
+        <li>Delivered 5+ business/product-oriented use cases</li>
+        <li>Increased conversions by 30-70% using model-driven audience selection</li>
+        <li>Boosted customer engagement with newsletters by 80% via recommendation system</li>
+        <li>Delivered a model to automate the taxonomy of open field reviews</li>
+      </ul>
+    </div>
+    <div id="abn-amro-senior" class="detail-content">
+      <h2>Senior Data Scientist at ABN Amro N.V.</h2>
+      <p>Worked on various use cases requiring NLP, classical ML, and statistical approaches.</p>
+      <h3>Key Responsibilities & Achievements:</h3>
+      <ul>
+        <li>Covered the role of scientific lead for the data science team, guiding colleagues to find solutions for their use cases.</li>
+        <li>Defined successful and unsuccessful customer journeys using unstructured click data to support a future next best action (NBA) system.</li>
+        <li>Delivered a use case to identify customers' drivers for the NPS (net promoter score) score, with the methodology to be published in a scientific paper.</li>
+        <li>Served as the product owner (PO) for use cases related to preventing churn and evaluating customers' propensity to buy products.</li>
+        <li>Helped develop a recommendation system (collaborative filtering) for personalizing newsletter articles sent to customers.</li>
+        <li>Member of the Data Science Review Board, providing best data science practices for teams across ABN Amro.</li>
+      </ul>
+    </div>
+    <div id="barclays" class="detail-content">
+      <h2>Senior Data Scientist at Barclays Bank PLC</h2>
+      <h3>Key Projects & Achievements:</h3>
+      <ul>
+        <li>Technical lead on a project to predict total UK expenditure based on transactional data and customer behavior analysis to forecast economic recovery from the COVID crisis.</li>
+        <li>Proposed and led a project to uncover potentially successful early-stage startups in collaboration with Barclays Ventures and Barclays accelerator Eagle Labs.</li>
+        <li>Technical lead on two NDA projects in collaboration with Barclays Ventures in the domains of transactional data insights and cyber-security.</li>
+        <li>Part of the winning team in a Barclays-wide 'Kaggle-style' competition for modeling customer credit defaults.</li>
+        <li>Member of the Innovation Hub group, founder of the internal talk series "Data Bites," and mentor for the Women in Machine Learning program and the internal data science program.</li>
+      </ul>
+    </div>
+    <div id="fxcintel" class="detail-content">
+      <h2>Lead Data Scientist at FXCintel Ltd.</h2>
+      <h3>Key Responsibilities & Achievements:</h3>
+      <ul>
+        <li>Developed and led a dynamic FX price optimization system using a mixture of ML models and customer behavior analysis.</li>
+        <li>Created leads of import/export companies for FX providers starting from unstructured datasets using ML algorithms (XGBoost).</li>
+        <li>Produced web crawlers and scrapers automated via Jenkins and Docker to enrich the company's datasets.</li>
+        <li>Delivered actionable data science to clients and presented results to technical and non-technical stakeholders.</li>
+        <li>Worked closely with the development team to implement solutions.</li>
+      </ul>
+    </div>
+    <div id="nda-consultant" class="detail-content">
+      <h2>Consultant - Research Scientist at NDA</h2>
+      <p>Evaluation of an investment strategy - Investment in founder-led companies</p>
+      <ul>
+        <li>Conducted a historical study of the market performance of Venture Capital-backed tech companies that underwent an IPO and have their founder as CEO.</li>
+        <li>Tested the hypothesis that these companies performed better than the market composite index over the last 20 years.</li>
+        <li>Delivered results in a written report to the CEO of the fund.</li>
+      </ul>
+    </div>
+    <div id="helium" class="detail-content">
+      <h2>Consultant - Lead Data Scientist - Helium Foundation</h2>
+      <p>LondHeNet - research project sponsored by Decentralized Wireless Alliance</p>
+      <ul>
+        <li>Defined and ran the data science approach for the LondHeNet project, which aimed to define performance indicators for Helium hotspots in London and predict network performance and rewards on new hotspots.</li>
+        <li>Produced a pipeline of ML approaches and provided simulations to solve the hotspots' geographical optimization problem.</li>
+        <li>Collaborated with the app developer to provide optimal solutions for scaling real-time results in the prototype Android mobile application.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+.experience-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience-cards {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.experience-details {
+  flex: 2;
+  position: sticky;
+  align-self: flex-start;
+}
+
+.experience-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card.active {
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.job-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.job-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #006400;
+  transition: width 0.3s ease;
+}
+
+.experience-card:hover .job-title::after,
+.experience-card.active .job-title::after {
+  width: 100%;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.company, .date {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.detail-content {
+  display: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detail-content.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column;
+  }
+
+  .experience-cards, .experience-details {
+    width: 100%;
+    padding-right: 0;
+    position: static;
+  }
+
+  .detail-content {
+    margin-top: 20px;
+  }
+
+  .experience-card.active .detail-content {
+    display: block;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.experience-card');
+  const details = document.querySelector('.experience-details');
+  const detailContents = document.querySelectorAll('.detail-content');
+
+  function setDetailsPosition() {
+    if (window.innerWidth > 768) {
+      const firstCardTop = cards[0].offsetTop;
+      details.style.top = `${firstCardTop}px`;
+    } else {
+      details.style.top = '0';
+    }
+  }
+
+  function selectCard(card) {
+    const target = card.getAttribute('data-target');
+    
+    cards.forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+
+    detailContents.forEach(detail => detail.classList.remove('active'));
+    
+    const targetContent = document.getElementById(target);
+    targetContent.classList.add('active');
+
+    if (window.innerWidth <= 768) {
+      card.appendChild(targetContent);
+    } else {
+      details.appendChild(targetContent);
+    }
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', function() {
+      selectCard(this);
+    });
+  });
+
+  if (cards.length > 0) {
+    selectCard(cards[0]);
+  }
+
+  setDetailsPosition();
+  window.addEventListener('resize', setDetailsPosition);
+});
+</script>

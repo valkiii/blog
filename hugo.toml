@@ -1,4 +1,4 @@
-baseURL = "valkiii.github.io"
+baseURL = "https://valkiii.github.io/"
 title   = "Valerio Ciotti"
 languageCode = "en-us"
 theme = "hello-friend-ng"

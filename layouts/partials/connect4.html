@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div id="game-container">
+  <div id="game-board"></div>
+  <div id="controls">
+    <button id="new-game">New Game</button>
+    <select id="player-type">
+      <option value="human">Human vs AI</option>
+      <option value="ai">AI vs AI</option>
+    </select>
+    <select id="starting-player">
+      <option value="Y">Yellow Starts</option>
+      <option value="R">Red Starts</option>
+    </select>
+  </div>
+  <div id="status"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
+<script src="{{ "js/connect4.js" | relURL }}"></script>
+{{ end }}

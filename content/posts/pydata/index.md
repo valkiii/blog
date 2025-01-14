@@ -72,7 +72,6 @@ If you were not one of the lucky people to participate at PyData 2024, no worrie
 
 {{< youtube tvSWHWG3iCY >}}
 
-
 The talk is about the construction and analysis of a time-varying worldwide network of professional relationships among startups to predict long-term economic performance using network centrality measures. In my PyData talk, I provided an overview of how I built the worldwide startup network using CrunchBase data and the Networkx library. I modeled employee flow and knowledge transfer as links between startups. By applying network centrality measures, I ranked early-stage startups (pre-seeded) and evaluated how their ranked positions correlated with their future success. I also touched on the implications of these findings for entrepreneurs, investors, and policymakers.
 
 Drawing on large-scale online data, I modeled professional relationships and employee transitions among startup companies in a time-varying global network. In this network, companies were represented as nodes, while links indicated employee flows and the transfer of knowledge across firms.

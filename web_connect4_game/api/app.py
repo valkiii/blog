@@ -192,10 +192,33 @@ def get_ai_move():
             return jsonify({"error": "No legal moves available"}), 400
         
         # Get AI move
-        ai_move = ensemble_agent.choose_action(board_array, legal_moves)
+        ai_move_raw = ensemble_agent.choose_action(board_array, legal_moves)
+        logger.info(f"Raw AI move type: {type(ai_move_raw)}, value: {ai_move_raw}")
         
-        # Get decision breakdown
+        # Convert numpy types to Python types
+        if hasattr(ai_move_raw, 'item'):
+            ai_move = ai_move_raw.item()
+        else:
+            ai_move = ai_move_raw
+        ai_move = int(ai_move)
+        logger.info(f"Converted AI move type: {type(ai_move)}, value: {ai_move}")
+        
+        # Get decision breakdown (convert numpy types to Python types)
         decision_breakdown = ensemble_agent.get_last_decision_breakdown()
+        if decision_breakdown:
+            # Convert any numpy types in the breakdown
+            def convert_numpy(obj):
+                if hasattr(obj, 'item'):  # numpy scalar
+                    return obj.item()
+                elif isinstance(obj, np.ndarray):
+                    return obj.tolist()
+                elif isinstance(obj, dict):
+                    return {k: convert_numpy(v) for k, v in obj.items()}
+                elif isinstance(obj, list):
+                    return [convert_numpy(v) for v in obj]
+                else:
+                    return obj
+            decision_breakdown = convert_numpy(decision_breakdown)
         
         # Get move evaluation details
         move_details = None
@@ -213,17 +236,20 @@ def get_ai_move():
                     for col in info['legal_moves']
                 }
         
-        return jsonify({
-            "move": int(ai_move),
-            "legal_moves": legal_moves,
-            "decision_breakdown": decision_breakdown,
-            "move_details": move_details,
-            "ensemble_method": ensemble_agent.ensemble_method,
-            "model_count": len(ensemble_agent.models)
-        })
+        # Simplified response - just the essential data
+        response_data = {
+            "move": ai_move,
+            "legal_moves": [int(x) for x in legal_moves],
+            "ensemble_method": "q_value_averaging",
+            "model_count": 5
+        }
+        
+        return jsonify(response_data)
         
     except Exception as e:
+        import traceback
         logger.error(f"Error in get_ai_move: {e}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
 

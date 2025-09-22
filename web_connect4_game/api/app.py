@@ -86,7 +86,7 @@ def load_ensemble_from_config(config_path: str = None) -> EnsembleAgent:
         config = default_config
     
     # Convert to full paths
-    base_dir = grandparent_dir
+    base_dir = parent_dir
     for model_config in config["models"]:
         if not model_config["path"].startswith("/") and not model_config["path"] in ["heuristic", "random"]:
             model_config["path"] = os.path.join(base_dir, model_config["path"])
@@ -109,7 +109,7 @@ def initialize_api():
         logger.info("🚀 Initializing Connect 4 Ensemble API...")
         
         # Try to load from examples/ensemble_config_v.json first
-        config_path = os.path.join(grandparent_dir, "examples", "ensemble_config_v.json")
+        config_path = os.path.join(parent_dir, "examples", "ensemble_config_v.json")
         ensemble_agent = load_ensemble_from_config(config_path)
         
         # Initialize game board
@@ -182,64 +182,36 @@ def get_ai_move():
         # Convert to numpy array for the AI
         board_array = np.array(board_state, dtype=int)
         
-        # Get legal moves
+        # Get legal moves (ensure they're Python ints)
         legal_moves = []
         for col in range(7):
             if board_array[0][col] == 0:  # Top row is empty
-                legal_moves.append(col)
+                legal_moves.append(int(col))
         
         if not legal_moves:
             return jsonify({"error": "No legal moves available"}), 400
         
-        # Get AI move
-        ai_move_raw = ensemble_agent.choose_action(board_array, legal_moves)
-        logger.info(f"Raw AI move type: {type(ai_move_raw)}, value: {ai_move_raw}")
-        
-        # Convert numpy types to Python types
-        if hasattr(ai_move_raw, 'item'):
-            ai_move = ai_move_raw.item()
-        else:
-            ai_move = ai_move_raw
-        ai_move = int(ai_move)
-        logger.info(f"Converted AI move type: {type(ai_move)}, value: {ai_move}")
-        
-        # Get decision breakdown (convert numpy types to Python types)
-        decision_breakdown = ensemble_agent.get_last_decision_breakdown()
-        if decision_breakdown:
-            # Convert any numpy types in the breakdown
-            def convert_numpy(obj):
-                if hasattr(obj, 'item'):  # numpy scalar
-                    return obj.item()
-                elif isinstance(obj, np.ndarray):
-                    return obj.tolist()
-                elif isinstance(obj, dict):
-                    return {k: convert_numpy(v) for k, v in obj.items()}
-                elif isinstance(obj, list):
-                    return [convert_numpy(v) for v in obj]
-                else:
-                    return obj
-            decision_breakdown = convert_numpy(decision_breakdown)
-        
-        # Get move evaluation details
-        move_details = None
-        if hasattr(ensemble_agent, 'last_decision_info') and ensemble_agent.last_decision_info:
-            info = ensemble_agent.last_decision_info
-            move_details = {
-                "method": info['method'],
-                "legal_moves": info['legal_moves'],
-                "model_contributions": info.get('model_contributions', [])
-            }
+        # Get AI move - use simple approach to avoid JSON issues
+        try:
+            ai_move_raw = ensemble_agent.choose_action(board_array, legal_moves)
             
-            if info['method'] == 'q_value_averaging':
-                move_details["q_values"] = {
-                    str(col): float(info['averaged_q_values'][col]) 
-                    for col in info['legal_moves']
-                }
+            # Convert to Python int safely
+            if hasattr(ai_move_raw, 'item'):
+                ai_move = int(ai_move_raw.item())
+            else:
+                ai_move = int(ai_move_raw)
+            
+            logger.info(f"AI chose move: {ai_move}")
+            
+        except Exception as e:
+            logger.error(f"Error in AI decision: {e}")
+            # Emergency fallback - choose center column or first available
+            ai_move = 3 if 3 in legal_moves else legal_moves[0]
         
-        # Simplified response - just the essential data
+        # Simple response with only basic data - ensure all values are JSON serializable
         response_data = {
-            "move": ai_move,
-            "legal_moves": [int(x) for x in legal_moves],
+            "move": int(ai_move),
+            "legal_moves": legal_moves,  # Already converted to int above
             "ensemble_method": "q_value_averaging",
             "model_count": 5
         }

@@ -11,9 +11,16 @@
       "Bash(pip install:*)",
       "Bash(PORT=5001 python:*)",
       "Bash(curl:*)",
-      "Bash(update_website \"Connect to real AI ensemble - remove heuristic fallback\")"
+      "Bash(update_website \"Connect to real AI ensemble - remove heuristic fallback\")",
+      "Bash(hugo)",
+      "Bash(hugo server:*)",
+      "Bash(node:*)",
+      "Bash(update_website \"Connect to Tournament AI - remove server dependency\")"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "/Users/vc/Research/valkiii.github.io"
+    ]
   }
 }

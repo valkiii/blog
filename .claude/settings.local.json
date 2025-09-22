@@ -6,7 +6,12 @@
       "Bash(update_website \"Fix Connect 4 game styling to match blog theme\")",
       "Bash(update_website \"Fix Connect 4 AI initialization and null pointer issues\")",
       "Bash(update_website \"Add prominent AI type indicators to Connect 4 game\")",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(PORT=5001 python:*)",
+      "Bash(curl:*)",
+      "Bash(update_website \"Connect to real AI ensemble - remove heuristic fallback\")"
     ],
     "deny": [],
     "ask": []

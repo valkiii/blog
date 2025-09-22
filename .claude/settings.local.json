@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(cp:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(update_website \"Fix Connect 4 game styling to match blog theme\")"
     ],
     "deny": [],
     "ask": []

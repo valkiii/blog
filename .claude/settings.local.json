@@ -4,7 +4,8 @@
       "Bash(cp:*)",
       "Bash(mkdir:*)",
       "Bash(update_website \"Fix Connect 4 game styling to match blog theme\")",
-      "Bash(update_website \"Fix Connect 4 AI initialization and null pointer issues\")"
+      "Bash(update_website \"Fix Connect 4 AI initialization and null pointer issues\")",
+      "Bash(update_website \"Add prominent AI type indicators to Connect 4 game\")"
     ],
     "deny": [],
     "ask": []

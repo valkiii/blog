@@ -15,7 +15,15 @@
       "Bash(hugo)",
       "Bash(hugo server:*)",
       "Bash(node:*)",
-      "Bash(update_website \"Connect to Tournament AI - remove server dependency\")"
+      "Bash(update_website \"Connect to Tournament AI - remove server dependency\")",
+      "Bash(git clone:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git lfs:*)",
+      "Bash(hf:*)",
+      "Bash(update_website \"Connect to real AI ensemble on Hugging Face Spaces\")"
     ],
     "deny": [],
     "ask": [],

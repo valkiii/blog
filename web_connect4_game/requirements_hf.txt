@@ -1,0 +1,9 @@
+# Hugging Face Spaces requirements for Connect 4 Ensemble
+gradio==4.44.0
+Flask==3.0.0
+Flask-CORS==4.0.0
+numpy==1.24.3
+torch==2.0.1
+
+# Optional: For better logging and monitoring
+python-dotenv==1.0.0

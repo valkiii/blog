@@ -23,7 +23,16 @@
       "Bash(git reset:*)",
       "Bash(git lfs:*)",
       "Bash(hf:*)",
-      "Bash(update_website \"Connect to real AI ensemble on Hugging Face Spaces\")"
+      "Bash(update_website \"Connect to real AI ensemble on Hugging Face Spaces\")",
+      "Bash(grep:*)",
+      "Bash(timeout 30 git push)",
+      "WebFetch(domain:drbayes-connect4-tournament-ai.hf.space)",
+      "Bash(/opt/anaconda3/bin/python:*)",
+      "Bash(huggingface-cli upload:*)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:drbayes.github.io)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:valkiii.github.io)"
     ],
     "deny": [],
     "ask": [],

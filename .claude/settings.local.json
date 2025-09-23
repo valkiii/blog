@@ -32,10 +32,12 @@
       "WebFetch(domain:huggingface.co)",
       "WebFetch(domain:drbayes.github.io)",
       "WebFetch(domain:localhost)",
-      "WebFetch(domain:valkiii.github.io)"
+      "WebFetch(domain:valkiii.github.io)",
+      "Bash(update_website \"Fix Connect 4 404 errors and improve AI reliability - add missing site.webmanifest and improve health checks\")"
     ],
     "deny": [],
     "ask": [],
+    "defaultMode": "acceptEdits",
     "additionalDirectories": [
       "/Users/vc/Research/valkiii.github.io"
     ]

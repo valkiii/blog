@@ -85,8 +85,8 @@ Combines 5 CNN-based Deep Q-Networks trained on 150k-750k games each Uses Q-valu
     <div id="move-log"></div>
 </div>
 
+<script src="/js/connect4-immediate-fix.js"></script>
 <script src="/js/connect4-huggingface-ai.js"></script>
-<script src="/js/connect4-direct-fix.js"></script>
 <script src="/js/game.js"></script>
 <h2 id="how-the-ai-works">How the AI Works</h2>
 <h3 id="-ensemble-architecture">🔗 Ensemble Architecture</h3>

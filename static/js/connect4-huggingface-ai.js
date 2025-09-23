@@ -7,7 +7,7 @@ class Connect4HuggingFaceAI {
     constructor(spaceUrl = null) {
         this.name = "Tournament AI Ensemble (HF)";
         this.isAvailable = false;
-        this.spaceUrl = spaceUrl || "https://YOUR_USERNAME-connect4-tournament-ai.hf.space";
+        this.spaceUrl = spaceUrl || "https://drbayes-connect4-tournament-ai.hf.space";
         this.apiEndpoint = `${this.spaceUrl}/api/move`;
         this.healthEndpoint = `${this.spaceUrl}/health`;
         

@@ -7,6 +7,7 @@ class Connect4HuggingFaceAI {
     constructor(spaceUrl = null) {
         this.name = "Tournament AI Ensemble (HF)";
         this.isAvailable = false;
+        this.isChecking = false;
         this.spaceUrl = spaceUrl || "https://drbayes-connect4-tournament-ai.hf.space";
         this.apiEndpoint = `${this.spaceUrl}/api/move`;
         this.healthEndpoint = `${this.spaceUrl}/health`;
@@ -19,6 +20,9 @@ class Connect4HuggingFaceAI {
     }
     
     async checkAvailability() {
+        if (this.isChecking) return;
+        this.isChecking = true;
+        
         try {
             console.log('🔄 Checking Hugging Face Space availability...');
             
@@ -55,13 +59,23 @@ class Connect4HuggingFaceAI {
         } catch (error) {
             console.error('❌ Error checking Hugging Face Space availability:', error);
             this.isAvailable = false;
+        } finally {
+            this.isChecking = false;
         }
     }
     
     async chooseMove(board, validMoves) {
         if (!this.isAvailable) {
-            console.error('❌ Hugging Face AI not available');
-            return null;
+            // Try to check availability once more if not already checking
+            if (!this.isChecking) {
+                console.log('🔄 AI not available, retrying health check...');
+                await this.checkAvailability();
+            }
+            
+            if (!this.isAvailable) {
+                console.error('❌ Hugging Face AI not available');
+                return null;
+            }
         }
         
         try {

@@ -1,0 +1,4 @@
+Force GitHub Pages rebuild - Connect 4 HF Space integration
+Timestamp: 2025-09-23-17:45
+Real tournament AI now working on HF Spaces
+Need to update blog JavaScript connection

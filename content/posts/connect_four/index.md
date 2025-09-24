@@ -1,14 +1,14 @@
 ---
-title: "🔴 Connect 4 vs AI Ensemble 🟡"
+title: "Connect 4 vs AI Ensemble"
 date: 2025-01-01T01:01:01Z
 draft: false
 categories: ["coding", "free-time"]
 tags: ["competition", "coding"]
 featured_image: ""
-description: "Challenge a tournament-winning AI ensemble in Connect 4! This AI combines 5 neural networks trained on 750k games and won first place against 35+ AI opponents."
+description: "Challenge a tournament-winning AI ensemble in Connect 4. This AI combines 5 neural networks trained on 750k games and won first place against 35+ AI opponents."
 ---
 
-Challenge our tournament-winning AI system in Connect 4! This isn't just any AI - it's an ensemble of 5 neural networks that dominated a comprehensive tournament against 35+ other AI opponents.
+Challenge a tournament-winning AI system in Connect 4. This ensemble of 5 neural networks dominated a comprehensive tournament against 35+ other AI opponents.
 
 ## The AI Opponent
 
@@ -25,16 +25,16 @@ You're playing against **"Custom-Ensemble-Top5Models-q"** - a sophisticated AI s
 
 ## How the AI Works
 
-### 🔗 Ensemble Architecture
+### Ensemble Architecture
 Combines 5 CNN-based Deep Q-Networks trained on different amounts of gameplay experience (150k-750k episodes each)
 
-### 🎯 Q-Value Averaging  
+### Q-Value Averaging  
 Each model predicts Q-values for all moves, then weights are applied and averaged for final decision
 
-### ⚖️ Weighted Strategy
+### Weighted Strategy
 Model weights: 30%, 20%, 20%, 15%, 15% based on training progression and performance
 
-### 🏆 Tournament Proven
+### Tournament Proven
 Winner of comprehensive tournament against 35+ AI opponents including other ensembles and individual models
 
 ---

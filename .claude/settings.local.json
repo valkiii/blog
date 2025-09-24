@@ -34,7 +34,8 @@
       "WebFetch(domain:localhost)",
       "WebFetch(domain:valkiii.github.io)",
       "Bash(update_website \"Fix Connect 4 404 errors and improve AI reliability - add missing site.webmanifest and improve health checks\")",
-      "Bash(update_website \"Add AI-first game option - AI can now randomly start games\")"
+      "Bash(update_website \"Add AI-first game option - AI can now randomly start games\")",
+      "Bash(update_website \"Professional Connect 4 styling - remove emojis and AI-generated language to match blog style\")"
     ],
     "deny": [],
     "ask": [],
